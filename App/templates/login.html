@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="mb-4">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-sm">
+                  <a class="navbar-brand" href="/"> Really Cool Crypto Exchange 🤑 </a>
+                </div>
+            </nav>
+        </header>
+        <main class="container-sm">
+            <div id="alerts_container">  </div>
+            <form id="form" method="post" class="m-auto mb-2">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address 📧</label>
+                    <input type="email" class="form-control" placeholder="your@really.suck" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password 🔒</label>
+                    <input type="password" class="form-control" placeholder="**************" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <input type="submit" class="btn btn-primary">
+            </form>
+            <p> Don't have acount? <a href="/register"> click here! </a></p>
+        </main>
+        <!-- Custom js -->
+        <script src="{{ url_for('static', filename='js/alerts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html> 
